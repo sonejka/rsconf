@@ -56,6 +56,28 @@ p {
 section {
     padding: 2em 1em 3em 1em;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.up-btn {
+    position: fixed;
+    top:90%;
+    left:80%;
+    display: inline-block;
+    height: 45px;
+    width: 55px;
+    background: #ccc;
+    color: #444;
+    text-align: center;
+    font-size: 200%;
+    line-height: 45px;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.up-btn:hover {
+    text-decoration: none;
+    opacity: 0.7;
 }
 
 /******************  header  ******************/
@@ -144,34 +166,77 @@ header {
 .vertical-mode ul li {
     display: block;
     float: none;
-    padding: 0;}
+    padding: 0;
+}
 
 .vertical-mode ul li a {
     display: block;
     padding: 1em;
     background: #000;
-    opacity: 0.7;}
+    opacity: 0.7;
+}
 
 .vertical-mode ul li a:hover {
     opacity: 0.8;
     text-decoration: none;
 }
 
-
 /******************  ticket buttons  ******************/
 
-.ticket-btn-1 {
+.ticket-btn-1, .ticket-btn-3 {
     display: inline-block;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform:translateY(-50%);
-    transform: translateY(-50%);
-    right: 50px;
-    padding: 0.5em 2em;
-    border: 1px solid #fff;
+    top: 20px;
+    right: 20px;
+    height: 60px;
+    padding: 0 1em;
+    border-radius: 10px;
+    background: #a20901;
     color: #fff;
-    font-size: 90%;
+    line-height: 60px;
+    transform: rotate(-5deg);
+}
+
+.ticket-btn-3 {
+    position: relative;
+}
+
+.ticket-btn-1:hover, .ticket-btn-3:hover {
+    background:#7b0701;
+}
+
+.ticket-btn-1:after, .ticket-btn-3:after, .ticket-btn-1:before, .ticket-btn-3:before  {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 20px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #000;
+}
+
+.ticket-btn-1:before, .ticket-btn-3:before {
+    left: -10px;
+}
+
+.ticket-btn-3:after, .ticket-btn-3:before {
+    background: #232323;
+}
+
+.ticket-btn-1 .wrap, .ticket-btn-3 .wrap {
+    display: inline-block;
+    padding: 0.6em 1em;
+    border-right: 2px dashed #eee;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.ticket-btn-1:hover .wrap, .ticket-btn-3:hover .wrap {
+    border-color: #eee;
 }
 
 .ticket-btn-2 {
@@ -182,21 +247,11 @@ header {
     background: #bb0a01;
 }
 
-.ticket-btn-3 {
-    display: inline-block;
-    padding: 0.5em 2em;
-    color: #fff;
-    border: 1px solid #fff;
-    font-size: 90%;
-}
 
 .ticket-btn-1:hover, .ticket-btn-2:hover, .ticket-btn-3:hover {
     text-decoration: none;
 }
 
-.ticket-btn-1:hover, .ticket-btn-3:hover {
-    background: #363636;
-}
 
 /******************  banner  ******************/
 
@@ -230,7 +285,7 @@ header {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform:translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
 }
@@ -321,7 +376,7 @@ section h2 {
 
 .sign-up-btn {
     display: inline-block;
-    padding:0 1em;
+    padding: 0 1em;
     height: 3em;
     background: #bb0a01;
     color: #fff;
@@ -338,7 +393,7 @@ section h2 {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform:translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
@@ -346,16 +401,22 @@ section h2 {
 
 /******************  venue   ******************/
 .venue-img {
-    width: 60%;
+    width: 40%;
     margin: 0 0 0 30px;
 }
 
 /******************  gallery & partners   ******************/
 
 .gallery-list, .partners-list {
-    display: flex;
+    -webkit-flex-flow: wrap row;
     flex-flow: row wrap;
     list-style-type: none;
+
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
 }
 
 .gallery-list li, .partners-list li {
@@ -494,4 +555,3 @@ footer {
 .schedule-full p {
     padding: 0.3em 0;
 }
-

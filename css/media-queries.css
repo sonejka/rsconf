@@ -13,24 +13,44 @@
     header {
         padding: 0;
     }
+
     .logo {
         left: 50%;
         margin-left: -77px;
     }
+
     .nav {
         display: none;
     }
+
     .nav-btn {
         display: block;
     }
+
     .ticket-btn-1 {
-        right: 8px;
-        padding: 0.5em 0.8em;
-        font-size: 80%;
+        top: 20px;
+        right: 10px;
+        height: 52px;
+        padding: 0 1em;
+        border-radius: 10px;
+        line-height: 50px;
     }
+
+    .ticket-btn-1:after, .ticket-btn-1:before {
+        display: none;
+    }
+
+    .ticket-btn-1 .wrap {
+        padding: 0.6em 1em;
+        border-right: 2px dashed #eee;
+        line-height: 40px;
+        font-size: 100%;
+    }
+
     .banner {
         min-height: 260px;
     }
+
     .banner h1 {
         font-size: 180%;
         padding-bottom: 1em;
@@ -47,10 +67,12 @@
         font-size: 100%;
         line-height: 1em;
     }
+
     .tags {
         bottom: 5px;
         right: 5px;
     }
+
     .tags p {
         display: inline;
         font-size: 130%;
@@ -74,9 +96,34 @@
     .sign-up-field {
         width: 10em;
     }
+
     .round-img {
         width: 7em;
         height: 7em;
+    }
+
+    .partners-list li img {
+        width: 100px;
+    }
+
+    .venue-img {
+        display: none;
+    }
+
+    .venue {
+        position: relative;
+    }
+
+    .venue:after {
+        content:"";
+        background:url(../images/hotel.jpg) no-repeat center center;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 
 }
