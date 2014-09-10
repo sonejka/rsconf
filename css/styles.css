@@ -1,0 +1,497 @@
+/******************  general  ******************/
+html, body, div, span, h1, h2, h3, h4, p, img, strong, ul, li, form, label, article, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    outline: 0;
+}
+
+html {
+    text-align: center;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    line-height: 1.46em;
+    text-align: left;
+}
+
+a {
+    color: #bb0a01;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    padding: 0.5em 0;
+}
+
+.right-fl {
+    float: right;
+}
+
+.textalign-right {
+    text-align: right;
+}
+
+.textalign-center {
+    text-align: center;
+}
+
+.round-img {
+    margin: 0.5em 1em;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+
+section {
+    padding: 2em 1em 3em 1em;
+    box-sizing: border-box;
+}
+
+/******************  header  ******************/
+header {
+    position: relative;
+    height: 100px;
+    padding: 0 200px 0 150px;
+    background: #000;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    z-index: 100;
+}
+
+/******************  navigation  ******************/
+
+.nav a {
+    color: #fff;
+}
+
+.nav {
+    padding: 35px 0 0 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+.nav li a {
+    color: #aaa;
+    font-size: 90%;
+}
+
+.nav li.active a {
+    color: #fff;
+}
+
+.nav li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-btn {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+
+    background: #000;
+    color: #fff;
+
+    font-family: "Verdana";
+    font-size: 300%;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.7;
+    z-index: 50;
+}
+
+.nav-btn:hover {
+    text-decoration: none;
+}
+
+.vertical-mode {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 50;
+}
+
+.vertical-mode .nav {
+    display: block;
+    padding: 0;
+}
+
+.vertical-mode ul li {
+    display: block;
+    float: none;
+    padding: 0;}
+
+.vertical-mode ul li a {
+    display: block;
+    padding: 1em;
+    background: #000;
+    opacity: 0.7;}
+
+.vertical-mode ul li a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+/******************  ticket buttons  ******************/
+
+.ticket-btn-1 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform: translateY(-50%);
+    right: 50px;
+    padding: 0.5em 2em;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 90%;
+}
+
+.ticket-btn-2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 1em 2em;
+    color: #fff;
+    background: #bb0a01;
+}
+
+.ticket-btn-3 {
+    display: inline-block;
+    padding: 0.5em 2em;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 90%;
+}
+
+.ticket-btn-1:hover, .ticket-btn-2:hover, .ticket-btn-3:hover {
+    text-decoration: none;
+}
+
+.ticket-btn-1:hover, .ticket-btn-3:hover {
+    background: #363636;
+}
+
+/******************  banner  ******************/
+
+.banner {
+    position: relative;
+    min-height: 540px;
+    color: #000;
+    background: #dbdbdb url("../images/banner.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 300%;
+    line-height: 2.5em;
+}
+
+.banner h2 {
+    font-size: 200%;
+    line-height: 1.5em;
+}
+
+.banner p {
+    padding: 0;
+    font-size: 150%;
+    line-height: 1.5em;
+}
+
+.textwrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.tags {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    text-align: left;
+}
+
+.tags p {
+    font-size: 130%;
+    line-height: 1.3em;
+}
+
+section h2 {
+    padding-bottom: 1em;
+    font-size: 200%;
+    line-height: 2em;
+}
+
+/******************  about RS  ******************/
+
+.about-rs, .gallery {
+    background: #f9f9f9;
+    border-color: #e6e6e6;
+    border-width: 1px 0;
+}
+
+.about-rs h3 {
+    color: #aaa;
+    font-size: 150%;
+    line-height: 2em;
+}
+
+.about-rs p {
+    margin: 1em 0;
+    font-size: 100%;
+    line-height: 1.46em;
+}
+
+/******************  speakers  ******************/
+
+.speakers-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+.speakers-list li {
+    width: 250px;
+    margin: 1.5em auto;
+    text-align: center;
+}
+
+.speakers-list li img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #bbb;
+}
+
+.speakers-list li h3 {
+    font-size: 120%;
+    line-height: 2em;
+}
+
+.about-speaker {
+    font-size: 80%;
+}
+
+/******************  sign-up   ******************/
+
+.sign-up {
+    position: relative;
+    min-height: 320px;
+    background: #232323;
+}
+
+.sign-up-field {
+    height: 3em;
+    width: 18em;
+    padding: 0 1em;
+    margin-right: 1em;
+    border: 0;
+    font-size: 100%;
+}
+
+.sign-up-btn {
+    display: inline-block;
+    padding:0 1em;
+    height: 3em;
+    background: #bb0a01;
+    color: #fff;
+    text-align: center;
+    line-height: 3em;
+}
+
+.sign-up-btn:hover {
+    text-decoration: none;
+}
+
+.sign-up-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+/******************  venue   ******************/
+.venue-img {
+    width: 60%;
+    margin: 0 0 0 30px;
+}
+
+/******************  gallery & partners   ******************/
+
+.gallery-list, .partners-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+.gallery-list li, .partners-list li {
+    margin: 1.5em auto;
+}
+
+.gallery-list li img {
+    width: 222px;
+}
+
+.partners-list li {
+    padding: 0.5em 1em;
+}
+
+.partners-list li img {
+    width: 200px;
+}
+
+/******************  footer   ******************/
+footer {
+    position: relative;
+    min-height: 535px;
+    padding-top: 70px;
+    background: #232323;
+    text-align: center;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.footer-nav-wrap {
+    padding: 3em 0;
+    overflow: hidden;
+}
+
+.footer-nav {
+    float: left;
+    width: 50%;
+    list-style-type: none;
+    text-align: right;
+}
+
+.footer-nav li {
+    padding: 0.5em 2em;
+}
+
+.footer-nav li:first-child {
+    padding-top: 0;
+}
+
+.footer-nav li:last-child {
+    padding-bottom: 0;
+}
+
+.footer-nav a {
+    color: #aaa;
+    font-size: 90%;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacts-nav li {
+    border-left: 1px solid #4c4c4c;
+    text-align: left;
+}
+
+.contacts-nav li a img {
+    width: 25px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+/******************  schedule   ******************/
+.schedule {
+    padding: 2em 0 3em 0;
+}
+
+.schedule h1, .partners h1 {
+    font-weight: normal;
+    font-size: 280%;
+}
+
+.schedule h2 {
+    color: #bb0a01;
+    font-weight: normal;
+    font-size: 150%;
+}
+
+.schedule-full {
+    list-style-type: none;
+}
+
+.schedule-full li {
+    position: relative;
+    min-height: 150px;
+    padding: 20px 0 20px 200px;
+}
+
+.schedule-full .break {
+    min-height: inherit;
+    background: #fbfbfb;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.speaker-photo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 160px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.schedule-full .time {
+    color: #bbb;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.schedule-full .speaker-name {
+    color: #aaa;
+    font-size: 90%;
+}
+
+.schedule-full h3 {
+    padding: 0.3em 0;
+    font-size: 150%;
+}
+
+.schedule-full p {
+    padding: 0.3em 0;
+}
+

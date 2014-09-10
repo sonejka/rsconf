@@ -1,0 +1,83 @@
+/****** device width 980px ******/
+@media all and (max-width: 980px) {
+
+}
+
+/****** device width 640px ******/
+@media all and (max-width: 640px) {
+
+}
+
+/****** device width 320px ******/
+@media screen and (max-width: 640px) {
+    header {
+        padding: 0;
+    }
+    .logo {
+        left: 50%;
+        margin-left: -77px;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-btn {
+        display: block;
+    }
+    .ticket-btn-1 {
+        right: 8px;
+        padding: 0.5em 0.8em;
+        font-size: 80%;
+    }
+    .banner {
+        min-height: 260px;
+    }
+    .banner h1 {
+        font-size: 180%;
+        padding-bottom: 1em;
+        line-height: 1.3em;
+    }
+
+    .banner h2 {
+        font-size: 110%;
+        line-height: 1.1em;
+        padding-bottom: 0.5em;
+    }
+
+    .banner p {
+        font-size: 100%;
+        line-height: 1em;
+    }
+    .tags {
+        bottom: 5px;
+        right: 5px;
+    }
+    .tags p {
+        display: inline;
+        font-size: 130%;
+        padding-left: 1.2em;
+    }
+
+    section h2 {
+        font-size: 150%;
+        line-height: 1.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .about-rs p {
+        margin: 0;
+    }
+
+    footer {
+        font-size: 70%;
+    }
+
+    .sign-up-field {
+        width: 10em;
+    }
+    .round-img {
+        width: 7em;
+        height: 7em;
+    }
+
+}
+
