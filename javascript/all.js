@@ -1,19 +1,20 @@
+window.onload = function(){
+    var el = document.getElementById("nav");
+    var navBtn = document.getElementById("nav-btn");
 
-var el = document.getElementById("nav");
-var navBtn = document.getElementById("nav-btn");
-
-function toggleClass() {
-    if (el.className == "vertical-mode-closed") {
-    el.className = "vertical-mode";
-    navBtn.innerHTML = 'x';
-    } else {
-    el.className = "vertical-mode-closed";
-    navBtn.innerHTML = '&#x2261;';
-    }
+    window.toggleClass = function() {
+        if (el.className == "vertical-mode-closed") {
+            el.className = "vertical-mode";
+            navBtn.innerHTML = 'x';
+        } else {
+            el.className = "vertical-mode-closed";
+            navBtn.innerHTML = '&#x2261;';
+        }
     }
 
-window.onresize = resize;
-function resize() {
-    el.className = "vertical-mode-closed";
-    navBtn.innerHTML = '&#x2261;';
+    window.onresize = function () {
+        el.className = "vertical-mode-closed";
+        navBtn.innerHTML = '&#x2261;';
     }
+
+}

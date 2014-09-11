@@ -8,15 +8,14 @@
 
 }
 
-/****** device width 320px ******/
-@media screen and (max-width: 640px) {
+/****** device width 690px ******/
+@media screen and (max-width: 690px) {
     header {
         padding: 0;
     }
 
     .logo {
-        left: 50%;
-        margin-left: -77px;
+        left: 80px;
     }
 
     .nav {
@@ -27,13 +26,18 @@
         display: block;
     }
 
+    .nav li.active a {
+        background: #222;
+    }
+
     .ticket-btn-1 {
-        top: 20px;
-        right: 10px;
+        top: 8px;
+        right: 8px;
         height: 52px;
-        padding: 0 1em;
+        padding: 0 0.5em;
         border-radius: 10px;
         line-height: 50px;
+        transform: rotate(0);
     }
 
     .ticket-btn-1:after, .ticket-btn-1:before {
@@ -41,7 +45,7 @@
     }
 
     .ticket-btn-1 .wrap {
-        padding: 0.6em 1em;
+        padding: 0.3em;
         border-right: 2px dashed #eee;
         line-height: 40px;
         font-size: 100%;
@@ -89,17 +93,29 @@
         margin: 0;
     }
 
-    footer {
-        font-size: 70%;
+    .sign-up {
+        min-height: 200px;
     }
 
     .sign-up-field {
         width: 10em;
+        vertical-align: top;
     }
 
-    .round-img {
-        width: 7em;
-        height: 7em;
+    .sign-up-btn {
+        background:#fff url("../images/email_logo.svg")no-repeat 0 0;
+        background-size:cover;
+        width: 66px;
+        height: 48px;
+        padding: 0;
+    }
+
+    .sign-up-btn span {
+        display: none;
+    }
+
+    .about-rs .round-img {
+        margin-right: -5em;
     }
 
     .partners-list li img {
@@ -117,13 +133,52 @@
     .venue:after {
         content:"";
         background:url(../images/hotel.jpg) no-repeat center center;
-        opacity: 0.3;
+        opacity: 0.2;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         position: absolute;
         z-index: -1;
+    }
+
+    .schedule h1, .schedule h2 {
+        padding-left: 1rem;
+    }
+
+    .schedule h1 {
+        font-size: 200%;
+    }
+    .schedule h2 {
+        font-size: 130%;
+    }
+
+    .schedule h3 {
+        font-size: 110%;
+    }
+
+    .schedule-full li {
+        padding:0.5em 1em;
+    }
+    .schedule-full .speaker-photo {
+        position: static;
+        float: right;
+        width: 80px;
+        margin: 0.4em;
+    }
+    .schedule-full li p {
+        font-size: 90%;
+    }
+    .schedule-full .time {
+        font-size: 130%;
+    }
+    footer {
+        font-size: 70%;
+    }
+
+    .footer-logo {
+        width: 160px;
+        height: 134px;
     }
 
 }

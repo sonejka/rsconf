@@ -80,30 +80,34 @@ section {
     opacity: 0.7;
 }
 
-/******************  header  ******************/
+/*************************************************    header  ******************/
 header {
     position: relative;
-    height: 100px;
-    padding: 0 200px 0 150px;
+    height: 70px;
+    padding: 0 180px 0 140px;
     background: #000;
 }
 
 .logo {
     display: block;
     position: absolute;
-    top: -20px;
+    top: 5px;
     left: 10px;
-    z-index: 100;
+    background: url(../images/logo_rs_text.svg) no-repeat 0 0;
+    background-size: 100px 60px;
+    width: 100px;
+    height: 60px;
+    z-index: 10;
 }
 
-/******************  navigation  ******************/
+/*************************************************    navigation  ******************/
 
 .nav a {
     color: #fff;
 }
 
 .nav {
-    padding: 35px 0 0 0;
+    padding: 1.3em 0 0 0;
     list-style-type: none;
     overflow: hidden;
 }
@@ -131,20 +135,20 @@ header {
     display: none;
     position: fixed;
     left: 0;
-    top: 10px;
-    width: 90px;
-    height: 90px;
+    top: 0;
+    width: 70px;
+    height: 70px;
 
     background: #000;
     color: #fff;
 
     font-family: "Verdana";
     font-size: 300%;
-    line-height: 70px;
+    line-height: 60px;
     text-align: center;
     text-decoration: none;
     opacity: 0.7;
-    z-index: 50;
+    z-index: 51;
 }
 
 .nav-btn:hover {
@@ -153,14 +157,19 @@ header {
 
 .vertical-mode {
     position: fixed;
-    top: 100px;
+    top: 0;
     left: 0;
+    height: 100%;
+    width: 75%;
     z-index: 50;
+    background: #000;
+    opacity: 0.9;
+    text-align: right;
 }
 
 .vertical-mode .nav {
     display: block;
-    padding: 0;
+    padding: 70px 0 0 0;
 }
 
 .vertical-mode ul li {
@@ -172,16 +181,15 @@ header {
 .vertical-mode ul li a {
     display: block;
     padding: 1em;
-    background: #000;
-    opacity: 0.7;
+    font-size: 120%;
 }
 
 .vertical-mode ul li a:hover {
-    opacity: 0.8;
+    color: #fff;
     text-decoration: none;
 }
 
-/******************  ticket buttons  ******************/
+/*************************************************    ticket buttons  ******************/
 
 .ticket-btn-1, .ticket-btn-3 {
     display: inline-block;
@@ -195,10 +203,14 @@ header {
     color: #fff;
     line-height: 60px;
     transform: rotate(-5deg);
+    z-index: 5;
 }
 
 .ticket-btn-3 {
     position: relative;
+    top:0;
+    right: 0;
+    transform: rotate(0);
 }
 
 .ticket-btn-1:hover, .ticket-btn-3:hover {
@@ -253,7 +265,7 @@ header {
 }
 
 
-/******************  banner  ******************/
+/*************************************************    banner  ******************/
 
 .banner {
     position: relative;
@@ -308,7 +320,7 @@ section h2 {
     line-height: 2em;
 }
 
-/******************  about RS  ******************/
+/*************************************************    about RS  ******************/
 
 .about-rs, .gallery {
     background: #f9f9f9;
@@ -328,7 +340,7 @@ section h2 {
     line-height: 1.46em;
 }
 
-/******************  speakers  ******************/
+/*************************************************    speakers  ******************/
 
 .speakers-list {
     display: flex;
@@ -357,7 +369,7 @@ section h2 {
     font-size: 80%;
 }
 
-/******************  sign-up   ******************/
+/*************************************************    sign-up   ******************/
 
 .sign-up {
     position: relative;
@@ -399,23 +411,23 @@ section h2 {
     text-align: center;
 }
 
-/******************  venue   ******************/
+/*************************************************    venue   ******************/
 .venue-img {
     width: 40%;
     margin: 0 0 0 30px;
 }
 
-/******************  gallery & partners   ******************/
+/*************************************************    gallery & partners   ******************/
 
 .gallery-list, .partners-list {
     -webkit-flex-flow: wrap row;
     flex-flow: row wrap;
     list-style-type: none;
 
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -435,22 +447,25 @@ section h2 {
     width: 200px;
 }
 
-/******************  footer   ******************/
+/*************************************************    footer   ******************/
 footer {
     position: relative;
     min-height: 535px;
-    padding-top: 70px;
     background: #232323;
     text-align: center;
 }
 
 .footer-logo {
     display: inline-block;
-    margin-left: -5px;
+    background: url(../images/logo_rs.svg) no-repeat;
+    background-size:cover;
+    width: 200px;
+    height: 168px;
+    margin: 1em 0 1em -22px;
 }
 
 .footer-nav-wrap {
-    padding: 3em 0;
+    padding: 1em 0 2em;
     overflow: hidden;
 }
 
@@ -494,7 +509,7 @@ footer {
     vertical-align: bottom;
 }
 
-/******************  schedule   ******************/
+/*************************************************    schedule     ******************/
 .schedule {
     padding: 2em 0 3em 0;
 }
@@ -502,6 +517,7 @@ footer {
 .schedule h1, .partners h1 {
     font-weight: normal;
     font-size: 280%;
+    line-height: 1.2em;
 }
 
 .schedule h2 {
