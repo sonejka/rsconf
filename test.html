@@ -1,35 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <title>About Rolling Scopes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link media="all" type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <link media="all" type="text/css" rel="stylesheet" href="css/styles2.css"/>
     <link media="all" type="text/css" rel="stylesheet" href="css/media-queries.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>    <script type="text/javascript" src="javascript/all.js"></script>
-    <script>
-        function gup( name )
-        {
-            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-            var regexS = "[\\?&]"+name+"=([^&#]*)";
-            var regex = new RegExp( regexS );
-            var results = regex.exec( window.location.href );
-            if( results == null )
-                return null;
-            else
-                return results[1];
-        }
-
-        var fontname = window.decodeURIComponent(gup("font"));
-
-        var css = "<style>body { font-family: " + fontname + ", serif !important; }</style>";
-        var js = '<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=' + fontname + '">';
-        document.writeln(js);
-        document.writeln(css);
-    </script>
-
+    <script type="text/javascript" src="javascript/all.js"></script>
 </head>
 <body>
 <header>
@@ -63,7 +41,7 @@
 <section class="about-rs">
     <h2>About Rolling Scopes</h2>
     <article>
-        <img class="round-img right" src="images/photo_example.jpg" alt="photo"/>
+        <img class="round-img right-fl" src="images/photo_example.jpg" alt="photo"/>
 
         <p>The Rolling Scopes - Minsk Front-end/JavaScript developer community.</p>
 
@@ -116,20 +94,6 @@
             <p class="about-speaker">Creator of Ember.js, HandMember of the jQuery Core Team. </p>
             <a href="#">Read more</a>
         </li>
-        <li><img class="round-img" src="images/unknown_speaker.jpg" alt=""/>
-
-            <h3>Speaker Name</h3>
-
-            <p class="about-speaker">Creator of Ember.js, HandMember of the jQuery Core Team. </p>
-            <a href="#">Read more</a>
-        </li>
-        <li><img class="round-img" src="images/unknown_speaker.jpg" alt=""/>
-
-            <h3>Speaker Name</h3>
-
-            <p class="about-speaker">Creator of Ember.js, HandMember of the jQuery Core Team. </p>
-            <a href="#">Read more</a>
-        </li>
     </ul>
 </section>
 
@@ -143,7 +107,7 @@
 <section class="venue">
     <h2>Venue</h2>
     <article>
-        <img class="venue-img right" src="images/hotel.jpg" alt="Hotel Photo"/>
+        <img class="venue-img right-fl" src="images/hotel.jpg" alt="Hotel Photo"/>
 
         <p>Minsk is the capital of Belarus, 2 millions inhabitants.
             Minsk is hosting IIHF Ice Hockey World Championship 2014</p>
@@ -167,7 +131,7 @@
         <li><a href="#"><img src="images/3.jpg" alt="photo"/></a></li>
         <li><a href="#"><img src="images/4.jpg" alt="photo"/></a></li>
     </ul>
-    <p class="text-right"><a href="#">View All</a></p>
+    <p class="textalign-right"><a href="#">View All</a></p>
 </section>
 <section class="partners">
     <h2>Partners</h2>
@@ -179,8 +143,8 @@
     </ul>
 </section>
 <footer>
-    <a class="footer-logo" href="http://rollingscopes.com/"></a>
-
+    <!--a class="footer-logo" href="http://rollingscopes.com/"></a-->
+    <a class="ticket-btn-3" href="#"><span class="wrap">Buy A Ticket</span></a>
     <div class="footer-nav-wrap">
         <ul class="footer-nav">
             <li><a href="index.html">About</a></li>
@@ -191,17 +155,14 @@
         </ul>
         <ul class="contacts-nav footer-nav">
             <li><a href="http://vk.com/therollingscopes"><img src="images/vk_circle.png" alt="vklogo"/>VK</a></li>
-            <li><a href="https://twitter.com/rollingscopes"><img src="images/twitter_circle.svg" alt="twitter logo"/>
-                Twitter</a></li>
-            <li><a href="https://www.youtube.com/user/therollingscopes"><img src="images/youtube_circle.svg"
-                                                                             alt="youtube logo"/>YouTube</a></li>
-            <li><a href="https://www.facebook.com/groups/TheRollingScopes/"><img src="images/facebook_circle.svg"
-                                                                                 alt="facebook logo"/>Facebook</a></li>
+            <li><a href="https://twitter.com/rollingscopes"><img src="images/twitter_circle.svg" alt="twitter logo"/> Twitter</a></li>
+            <li><a href="https://www.youtube.com/user/therollingscopes"><img src="images/youtube_circle.svg" alt="youtube logo"/>YouTube</a></li>
+            <li><a href="https://www.facebook.com/groups/TheRollingScopes/"><img src="images/facebook_circle.svg" alt="facebook logo"/>Facebook</a></li>
             <li><a href="mailto:rolling.scopes@gmail.com"><img
-                    src="images/email_circle.png" alt="logo email"/>Mail</a></li>
+                    src="images/email_circle.png" alt="logo email"/>rolling.scopes@gmail.com</a></li>
         </ul>
     </div>
-    <a class="ticket-btn-3" href="#"><span class="wrap">Buy A Ticket</span></a>
+
 </footer>
 <a class="up-btn" href="#">&and;</a>
 </body>
