@@ -15,15 +15,14 @@ body {
     max-width: 960px;
     margin: 0 auto;
     background: #fff;
-    color: #000;
-    font-family: "Helvetica Neue", "Arial", sans-serif;
+    color: #444;
+    font-family: 'Lusitana', 'Cambria', 'Georgia','Times New Roman', 'Times', serif;
     line-height: 1.46em;
     text-align: left;
 }
 
-
 a {
-    color: #bb0a01;
+    color: #ad0f00;
     text-decoration: none;
 }
 
@@ -31,69 +30,69 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
-    padding: 0.5em 0;
-}
-
 h1,h2,h3,h4,h5,h6 {
-    font-family: "SourceSansPro","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-weight: bold;
     font-style: normal;
-    text-rendering: optimizeLegibility;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #444;
     margin-top: 0.2em;
     margin-bottom: 0.5em;
-    line-height: 1.2125rem
+    line-height: 1.2125em
 }
 
 h1 {
-    font-size: 2.125rem
+    font-size: 2.125em
 }
 
 h2 {
-    font-size: 1.6875rem
+    font-size: 1.6875em
 }
 
 h3 {
-    font-size: 1.375rem
+    font-size: 1.375em
 }
 
 h4 {
-    font-size: 1.125rem
+    font-size: 1.125em
 }
 
 h5 {
-    font-size: 1.125rem
+    font-size: 1.125em
 }
 
 h6 {
-    font-size: 1rem
+    font-size: 1em
 }
 
-
-.right-fl {
-    float: right;
+.left {
+    float: left !important
 }
 
-.textalign-right {
-    text-align: right;
+.right {
+    float: right !important
 }
 
-.textalign-center {
-    text-align: center;
+.text-left {
+    text-align: left !important
 }
+
+.text-right {
+    text-align: right !important
+}
+
+.text-center {
+    text-align: center !important
+}
+
 
 .round-img {
-    margin: 0.5em 1em;
     width: 15em;
     height: 15em;
     border-radius: 50%;
 }
 
-section {
-    padding: 2em 1em 3em 1em;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+/*************************************************    up batton  ******************/
+
 
 .up-btn {
     position: fixed;
@@ -120,7 +119,7 @@ section {
 header {
     position: relative;
     height: 70px;
-    padding: 0 180px 0 230px;
+    padding: 0 180px 0 140px;
     background: #000;
 }
 
@@ -128,20 +127,19 @@ header {
     display: block;
     position: absolute;
     top: 5px;
-    left: 0;
-    background: url(../images/logo_rs2.svg) no-repeat 0 0;
-    background-size: contain;
-    width: 200px;
-    height: 200px;
+    left: 10px;
+    background: url(../images/logo_rs_text.svg) no-repeat 0 0;
+    background-size: 100px 60px;
+    width: 100px;
+    height: 60px;
     z-index: 10;
-    opacity: 0.7;
-    transform: rotate(-10deg);
 }
 
 /*************************************************    navigation  ******************/
 
 .nav a {
     color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav {
@@ -226,6 +224,31 @@ header {
     color: #fff;
     text-decoration: none;
 }
+.nav li:hover a{
+    color: greenyellow !important;
+}
+
+.nav li a:before {
+    visibility: hidden;
+    content: "[ \"";
+    color: #ffffff;
+}
+
+.nav li a:after {
+    visibility: hidden;
+    content: "\" ]";
+    color: #ffffff;
+}
+
+.nav li:hover a:before {
+    visibility: visible;
+    content: "[ \"";
+}
+
+.nav li:hover a:after {
+    visibility: visible;
+    content: "\" ]";
+}
 
 /*************************************************    ticket buttons  ******************/
 
@@ -237,10 +260,9 @@ header {
     height: 60px;
     padding: 0 1em;
     border-radius: 10px;
-    background: #a20901;
+    background: #ad0f00;
     color: #fff;
     line-height: 60px;
-    transform: rotate(-5deg);
     z-index: 5;
 }
 
@@ -252,7 +274,7 @@ header {
 }
 
 .ticket-btn-1:hover, .ticket-btn-3:hover {
-    background:#7b0701;
+    background:#ad0f00;
 }
 
 .ticket-btn-1:after, .ticket-btn-3:after, .ticket-btn-1:before, .ticket-btn-3:before  {
@@ -294,14 +316,64 @@ header {
     margin-top: 20px;
     padding: 1em 2em;
     color: #fff;
-    background: #bb0a01;
+    background: #ad0f00;
 }
 
 
-.ticket-btn-1:hover, .ticket-btn-2:hover, .ticket-btn-3:hover {
+.ticket-btn-5 {
+    background: url("../images/tic4.svg") no-repeat 0 0;
+    background-size: contain;
+    width: 160px;
+    padding:1em 2em 1em 1.7em;
+    box-sizing: border-box;
+    height: 108px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top:40px;
+    z-index: 10;
+    color: #eee;
+    font-size: 160%;
+    line-height: 1.2em;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform:rotate(30deg);
+    text-align: center;
+}
+
+.ticket-btn-6 {
+    background: url("../images/tic4.svg") no-repeat 0 0;
+    background-size: contain;
+    width: 160px;
+    padding:1em 2em 1em 1.7em;
+    box-sizing: border-box;
+    height: 108px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top:40px;
+    z-index: 10;
+    color: #eee;
+    font-size: 160%;
+    line-height: 1.2em;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform:rotate(30deg);
+    text-align: center;
+}
+
+
+footer .ticket-btn-5 {
+    transform:rotate(0);
+    position: static;
+    margin: 30px 0;
+}
+
+.ticket-btn-1:hover, .ticket-btn-2:hover, .ticket-btn-3:hover, .ticket-btn-5:hover {
     text-decoration: none;
 }
-
 
 /*************************************************    banner  ******************/
 
@@ -314,23 +386,26 @@ header {
     text-align: center;
 }
 
-
 .banner h1 {
-color: #444;
-font-size: 4em;
-font-weight: 100;
-letter-spacing: -1px;
-line-height: 1.1em;
+    color: #ad0f00;
+    font-size: 400%;
+    font-weight: 100;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-/***
+
 .banner h2 {
-    font-size: 200%;
-    line-height: 1.5em;
-} **/
+    color: #444;
+    font-size: 260%;
+    line-height: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 .banner p {
+    color: #444;
     padding: 0;
-    font-size: 150%;
+    font-size: 180%;
     line-height: 1.5em;
 }
 
@@ -354,12 +429,18 @@ line-height: 1.1em;
 .tags p {
     font-size: 130%;
     line-height: 1.3em;
+    margin-bottom: 0;
+}
+/*************************************************    section  ******************/
+
+section {
+    padding:1em 1.5em;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-section h2 {
-    padding-bottom: 1em;
-    font-size: 200%;
-    line-height: 2em;
+section p {
+    padding: .75em 0;
 }
 
 /*************************************************    about RS  ******************/
@@ -368,18 +449,12 @@ section h2 {
     background: #f9f9f9;
     border-color: #e6e6e6;
     border-width: 1px 0;
+    position: relative;
 }
 
 .about-rs h3 {
     color: #aaa;
     font-size: 150%;
-    line-height: 2em;
-}
-
-.about-rs p {
-    margin: 1em 0;
-    font-size: 100%;
-    line-height: 1.46em;
 }
 
 /*************************************************    speakers  ******************/
@@ -391,31 +466,23 @@ section h2 {
 }
 
 .speakers-list li {
-    width: 250px;
-    margin: 1.5em auto;
-    text-align: center;
+    width: 220px;
+    margin: 0 auto;
+    padding: 2em;
+    box-sizing: border-box;
 }
 
 .speakers-list li img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border: 1px solid #bbb;
-}
-
-.speakers-list li h3 {
-    font-size: 120%;
-    line-height: 2em;
-}
-
-.about-speaker {
-    font-size: 80%;
 }
 
 /*************************************************    sign-up   ******************/
 
 .sign-up {
     position: relative;
-    min-height: 320px;
+    min-height: 300px;
     background: #232323;
 }
 
@@ -432,7 +499,7 @@ section h2 {
     display: inline-block;
     padding: 0 1em;
     height: 3em;
-    background: #bb0a01;
+    background: #ad0f00;
     color: #fff;
     text-align: center;
     line-height: 3em;
@@ -456,7 +523,7 @@ section h2 {
 /*************************************************    venue   ******************/
 .venue-img {
     width: 40%;
-    margin: 0 0 0 30px;
+    margin: 0 1em;
 }
 
 /*************************************************    gallery & partners   ******************/
@@ -473,8 +540,9 @@ section h2 {
     display: flex;
 }
 
-.gallery-list li, .partners-list li {
-    margin: 1.5em auto;
+.gallery-list li {
+    margin: .5em auto 0;
+    padding: 0 .2em 0 0;
 }
 
 .gallery-list li img {
@@ -482,9 +550,9 @@ section h2 {
 }
 
 .partners-list li {
-    padding: 0.5em 1em;
+    margin: .5em auto 0;
+    padding: 0 .5em;
 }
-
 .partners-list li img {
     width: 200px;
 }
@@ -492,15 +560,25 @@ section h2 {
 /*************************************************    footer   ******************/
 footer {
     position: relative;
-    min-height: 400px;
-    text-align: center;
+    min-height: 535px;
     background: #232323;
-    padding: 5em 0;
-    background-size: contain;
+    text-align: center;
+    padding:1em 1.5em;
+}
+
+.rs-logo {
+    display: inline-block;
+    background: url(../images/logo_rs.svg) no-repeat;
+    background-size:cover;
+    width: 300px;
+    height: 254px;
+    margin: 0 0 1em 1em;
+    opacity: 0.8;
+    float: right;
 }
 
 .footer-nav-wrap {
-    padding: 5em 0 2em;
+    padding: 1em 0 2em;
     overflow: hidden;
 }
 
@@ -549,16 +627,8 @@ footer {
     padding: 2em 0 3em 0;
 }
 
-.schedule h1, .partners h1 {
-    font-weight: normal;
-    font-size: 280%;
-    line-height: 1.2em;
-}
-
 .schedule h2 {
     color: #bb0a01;
-    font-weight: normal;
-    font-size: 150%;
 }
 
 .schedule-full {
@@ -568,7 +638,7 @@ footer {
 .schedule-full li {
     position: relative;
     min-height: 150px;
-    padding: 20px 0 20px 200px;
+    padding: 1em 0 1em 200px;
 }
 
 .schedule-full .break {
@@ -582,7 +652,7 @@ footer {
     position: absolute;
     top: 30px;
     left: 0;
-    width: 160px;
+    width: 150px;
     border-radius: 50%;
     border: 1px solid #ccc;
 }
@@ -595,14 +665,9 @@ footer {
 
 .schedule-full .speaker-name {
     color: #aaa;
-    font-size: 90%;
-}
-
-.schedule-full h3 {
-    padding: 0.3em 0;
-    font-size: 150%;
 }
 
 .schedule-full p {
     padding: 0.3em 0;
+    margin: 0;
 }

@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     background: #fff;
     color: #444;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lusitana', 'Cambria', 'Georgia','Times New Roman', 'Times', serif;
     line-height: 1.46em;
     text-align: left;
 }
@@ -30,14 +30,10 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
-    font-size: 100%;
-    margin-bottom: 1.25em;
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-style: normal;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #444;
     margin-top: 0.2em;
     margin-bottom: 0.5em;
@@ -95,11 +91,8 @@ h6 {
     border-radius: 50%;
 }
 
-section {
-    padding: 2em 1em 3em 1em;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+/*************************************************    up batton  ******************/
+
 
 .up-btn {
     position: fixed;
@@ -146,6 +139,7 @@ header {
 
 .nav a {
     color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav {
@@ -348,12 +342,14 @@ header {
     font-weight: 100;
     letter-spacing: -1px;
     line-height: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .banner h2 {
     color: #444;
     font-size: 260%;
     line-height: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .banner p {
@@ -385,6 +381,17 @@ header {
     line-height: 1.3em;
     margin-bottom: 0;
 }
+/*************************************************    section  ******************/
+
+section {
+    padding:1em 1.5em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+section p {
+    padding: .75em 0;
+}
 
 /*************************************************    about RS  ******************/
 
@@ -398,13 +405,6 @@ header {
 .about-rs h3 {
     color: #aaa;
     font-size: 150%;
-    line-height: 2em;
-}
-
-.about-rs p {
-    margin: 1em 0;
-    font-size: 100%;
-    line-height: 1.46em;
 }
 
 /*************************************************    speakers  ******************/
@@ -418,7 +418,7 @@ header {
 .speakers-list li {
     width: 220px;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 2em;
     box-sizing: border-box;
 }
 
@@ -428,17 +428,11 @@ header {
     border: 1px solid #bbb;
 }
 
-.speakers-list li h3 {
-    line-height: 1.8em;
-    font-weight: 500;
-    font-size: 150%;
-}
-
 /*************************************************    sign-up   ******************/
 
 .sign-up {
     position: relative;
-    min-height: 320px;
+    min-height: 300px;
     background: #232323;
 }
 
@@ -496,8 +490,9 @@ header {
     display: flex;
 }
 
-.gallery-list li, .partners-list li {
-    margin: 1.5em auto;
+.gallery-list li {
+    margin: .5em auto 0;
+    padding: 0 .2em 0 0;
 }
 
 .gallery-list li img {
@@ -505,9 +500,9 @@ header {
 }
 
 .partners-list li {
-    padding: 0.5em 1em;
+    margin: .5em auto 0;
+    padding: 0 .5em;
 }
-
 .partners-list li img {
     width: 200px;
 }
@@ -518,6 +513,7 @@ footer {
     min-height: 535px;
     background: #232323;
     text-align: center;
+    padding:1em 1.5em;
 }
 
 .footer-logo {

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="294px" height="159px" viewBox="-3.106 -2.417 294 159" enable-background="new -3.106 -2.417 294 159"
+	 xml:space="preserve">
+<defs>
+</defs>
+<rect x="33.894" y="20.583" fill="#AD0F00" width="224" height="119"/>
+<rect x="266.804" y="70.083" fill="#AD0F00" width="1.34" height="1"/>
+<rect x="222.894" y="30.583" fill="#AD0F00" width="4" height="8"/>
+<rect x="228.894" y="38.583" fill="#AD0F00" width="3" height="45"/>
+<rect x="226.394" y="39.083" fill="#FFFFFF" width="9" height="82"/>
+<path fill="#AD0F00" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M50.077,129.444h193.612
+	c4.3,0,7.746-3.482,7.746-7.781V36.48c0-4.295-3.446-7.76-7.729-7.76H50.077c-4.254,0-7.724,3.456-7.724,7.76v85.182
+	C42.353,125.961,45.813,129.444,50.077,129.444z M226.917,38.399h9.044v23.259h-9.044V38.399z M226.917,67.456h9.044l-0.018,23.205
+	h-9.026V67.456z M226.917,97.836h9.026v23.229h-9.026V97.836z"/>
+<path fill="#AD0F00" d="M0,102.13v40.942c0,8.326,6.734,15.093,15.047,15.093h263.542c8.318,0,15.058-6.767,15.058-15.093v-41.415
+	c-12.489,0-22.612-10.122-22.593-22.589c0-12.466,10.121-22.58,22.593-22.58V15.056C293.655,6.744,286.925,0,278.599,0H15.047
+	C6.725,0,0,6.753,0,15.056v41.896c12.462,0,22.571,10.126,22.571,22.589C22.571,92.026,12.462,102.13,0,102.13z M37.646,37.646
+	c0-8.313,6.749-15.056,15.053-15.056h188.276c8.311,0,15.04,6.762,15.04,15.056l-0.018,82.861c0,8.309-6.749,15.057-15.04,15.057
+	H52.699c-8.314,0-15.053-6.767-15.053-15.057V37.646z"/>
+<rect x="1.195" y="3.93" fill="none" width="295.771" height="14.716"/>
+<text transform="matrix(1 0 0 1 1.1948 12.8335)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="12">RS CONF 2015 RS CONF 2015 RS CONF 2015 RS </text>
+<text transform="matrix(4.489659e-011 -1 1 4.489659e-011 266.8037 112.23)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="12">0 1 6 2 3 2 0</text>
+<text transform="matrix(-1.346898e-010 1 -1 -1.346898e-010 25.1436 42.4214)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="12">0 1 6 2 3 2 0</text>
+<rect x="1.194" y="141.45" fill="none" width="284.271" height="14.716"/>
+<text transform="matrix(1 0 0 1 1.1943 150.354)" fill="#FFFFFF" font-family="'Montserrat-Regular'" font-size="12">RS CONF 2015 RS CONF 2015 RS CONF 2015 RS </text>
+<rect x="218.894" y="32.583" fill="#AD0F00" width="4" height="94"/>
+<rect x="222.894" y="33.583" fill="#AD0F00" width="9" height="92"/>
+<rect x="225.894" y="60.583" fill="#AD0F00" width="16" height="10"/>
+<rect x="210.894" y="77.583" fill="#AD0F00" width="16" height="10"/>
+<rect x="225.894" y="90.583" fill="#AD0F00" width="16" height="10"/>
+</svg>
