@@ -84,7 +84,6 @@ h6 {
     text-align: center !important
 }
 
-
 .round-img {
     width: 15em;
     height: 15em;
@@ -92,7 +91,6 @@ h6 {
 }
 
 /*************************************************    up batton  ******************/
-
 
 .up-btn {
     position: fixed;
@@ -126,36 +124,34 @@ header {
 .logo {
     display: block;
     position: absolute;
-    top: 5px;
-    left: 10px;
-    background: url(../images/logo_rs_text.svg) no-repeat 0 0;
-    background-size: 100px 60px;
-    width: 100px;
+    top: 50%;
+    left: 5px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 115px;
     height: 60px;
+    background: url(../images/logo_rs_text.svg) no-repeat 0 0;
+    background-size: cover;
     z-index: 10;
 }
 
 /*************************************************    navigation  ******************/
-
-.nav a {
-    color: #fff;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .nav {
-    padding: 1.3em 0 0 0;
     list-style-type: none;
     overflow: hidden;
+    padding-top: .5em;
 }
 
 .nav li {
     float: left;
-    padding: 0 20px 0 0;
 }
 
 .nav li a {
     color: #aaa;
-    font-size: 90%;
+    display: inline-block;
+    padding: 1em 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav li.active a {
@@ -163,8 +159,30 @@ header {
 }
 
 .nav li a:hover {
-    color: #fff;
+    color: #ffa500;
     text-decoration: none;
+}
+
+.nav li a:before {
+    visibility: hidden;
+    content: "[ \"";
+}
+
+.nav li a:after {
+    visibility: hidden;
+    content: "\" ]";
+}
+
+.nav li:hover a:before {
+    visibility: visible;
+    content: "[ \"";
+    color: #aaa;
+}
+
+.nav li:hover a:after {
+    visibility: visible;
+    content: "\" ]";
+    color: #aaa;
 }
 
 .nav-btn {
@@ -224,93 +242,30 @@ header {
     color: #fff;
     text-decoration: none;
 }
-.nav li:hover a{
-    color: greenyellow !important;
-}
-
-.nav li a:before {
-    visibility: hidden;
-    content: "[ \"";
-    color: #ffffff;
-}
-
-.nav li a:after {
-    visibility: hidden;
-    content: "\" ]";
-    color: #ffffff;
-}
-
-.nav li:hover a:before {
-    visibility: visible;
-    content: "[ \"";
-}
-
-.nav li:hover a:after {
-    visibility: visible;
-    content: "\" ]";
-}
 
 /*************************************************    ticket buttons  ******************/
 
-.ticket-btn-1, .ticket-btn-3 {
+.ticket-btn {
+    background: url("../images/ticket.svg") no-repeat 0 0;
+    background-size: contain;
+    width: 160px;
+    padding:1em 2em 1em 1.7em;
+    box-sizing: border-box;
+    height: 108px;
     display: inline-block;
     position: absolute;
-    top: 20px;
     right: 20px;
-    height: 60px;
-    padding: 0 1em;
-    border-radius: 10px;
-    background: #ad0f00;
-    color: #fff;
-    line-height: 60px;
-    z-index: 5;
-}
-
-.ticket-btn-3 {
-    position: relative;
-    top:0;
-    right: 0;
-    transform: rotate(0);
-}
-
-.ticket-btn-1:hover, .ticket-btn-3:hover {
-    background:#ad0f00;
-}
-
-.ticket-btn-1:after, .ticket-btn-3:after, .ticket-btn-1:before, .ticket-btn-3:before  {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: 20px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background: #000;
-}
-
-.ticket-btn-1:before, .ticket-btn-3:before {
-    left: -10px;
-}
-
-.ticket-btn-3:after, .ticket-btn-3:before {
-    background: #232323;
-}
-
-.ticket-btn-1 .wrap, .ticket-btn-3 .wrap {
-    display: inline-block;
-    padding: 0.6em 1em;
-    border-right: 2px dashed #eee;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 100%;
+    top:40px;
+    z-index: 10;
+    color: #ff0;
+    font-size: 160%;
+    line-height: 1.2em;
     font-family: monospace;
+    font-weight: bold;
     text-transform: uppercase;
+    transform:rotate(30deg);
+    text-align: center;
 }
-
-.ticket-btn-1:hover .wrap, .ticket-btn-3:hover .wrap {
-    border-color: #eee;
-}
-
 .ticket-btn-2 {
     display: inline-block;
     margin-top: 20px;
@@ -319,11 +274,15 @@ header {
     background: #ad0f00;
 }
 
-
-.ticket-btn-1:hover, .ticket-btn-2:hover, .ticket-btn-3:hover {
-    text-decoration: none;
+footer .ticket-btn {
+    transform:rotate(0);
+    position: static;
+    margin: 30px 0;
 }
 
+.ticket-btn:hover, .ticket-btn-2:hover {
+    text-decoration: none;
+}
 
 /*************************************************    banner  ******************/
 
@@ -405,6 +364,17 @@ section p {
 .about-rs h3 {
     color: #aaa;
     font-size: 150%;
+}
+
+.rs-logo {
+    display: inline-block;
+    background: url(../images/logo_rs.svg) no-repeat;
+    background-size:cover;
+    width: 300px;
+    height: 254px;
+    margin: 0 0 1em 1em;
+    opacity: 0.8;
+    float: right;
 }
 
 /*************************************************    speakers  ******************/
@@ -510,20 +480,10 @@ section p {
 /*************************************************    footer   ******************/
 footer {
     position: relative;
-    min-height: 535px;
+    min-height: 400px;
     background: #232323;
     text-align: center;
     padding:1em 1.5em;
-}
-
-.footer-logo {
-    display: inline-block;
-    background: url(../images/logo_rs2.svg) no-repeat;
-    background-size:cover;
-    width: 200px;
-    height: 168px;
-    margin: 1em 0 1em -22px;
-    opacity: 0.8;
 }
 
 .footer-nav-wrap {
