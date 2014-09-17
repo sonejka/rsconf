@@ -6,19 +6,12 @@ html, body, div, span, h1, h2, h3, h4, p, img, strong, ul, li, form, label, arti
     font-size: 100%;
     outline: 0;
 }
-
-html {
-    text-align: center;
-}
-
 body {
-    max-width: 960px;
-    margin: 0 auto;
     background: #fff;
     color: #444;
     font-family: 'Lusitana', 'Cambria', 'Georgia','Times New Roman', 'Times', serif;
     line-height: 1.46em;
-    text-align: left;
+    text-align: center;
 }
 
 a {
@@ -28,6 +21,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+p {
+    margin-bottom: 0.5em;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -83,3 +80,238 @@ h6 {
 .text-center {
     text-align: center !important
 }
+
+/*************  header ************/
+header {
+    height: 50px;
+    background: #000;
+    text-align: center;
+}
+.header-wrap {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 140px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 96px;
+    height: 50px;
+    background: url(../images/logo_rs_text.svg) no-repeat 0 0;
+    background-size: cover;
+    z-index: 10;
+}
+
+/**************    navigation  ******************/
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    color: #aaa;
+    display: inline-block;
+    padding: .8em 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav li.active a {
+    color: #fff;
+}
+
+.nav li a:hover {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.nav li a:before {
+    visibility: hidden;
+    content: "[ \"";
+}
+
+.nav li a:after {
+    visibility: hidden;
+    content: "\" ]";
+}
+
+.nav li:hover a:before {
+    visibility: visible;
+    content: "[ \"";
+    color: #aaa;
+}
+
+.nav li:hover a:after {
+    visibility: visible;
+    content: "\" ]";
+    color: #aaa;
+}
+
+.nav-btn {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+
+    background: #000;
+    color: #fff;
+
+    font-family: "Verdana";
+    font-size: 200%;
+    line-height: 46px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.7;
+    z-index: 51;
+}
+
+.nav-btn:hover {
+    text-decoration: none;
+}
+
+.vertical-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%;
+    z-index: 50;
+    background: #000;
+    opacity: 0.9;
+    text-align: right;
+}
+
+.vertical-mode .nav {
+    display: block;
+    padding: 70px 0 0 0;
+}
+
+.vertical-mode ul li {
+    display: block;
+    float: none;
+    padding: 0;
+}
+
+.vertical-mode ul li a {
+    display: block;
+    padding: 1em;
+    font-size: 120%;
+}
+
+.vertical-mode ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+/**************    banner   ******************/
+.banner h1 {
+    color: #ad0f00;
+    font-size: 400%;
+    font-weight: 100;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.banner h2 {
+    margin: 0;
+    color: #444;
+    font-size: 260%;
+    line-height: 1.4em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.banner p {
+    color: #444;
+    padding: 0;
+    font-size: 180%;
+    line-height: 1.5em;
+}
+/**************    section  ******************/
+section {
+    max-width: 960px;
+    padding: 1em 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.rs-logo {
+    display: inline-block;
+    background: url(../images/logo_rs.svg) no-repeat;
+    background-size: contain;
+    max-width: 500px;
+    width: 100%;
+    height: 420px;
+    margin: 2em 2em 2em -2em;
+}
+
+.about-rs h3 {
+    font-size: 500%;
+    color: #bbb;
+}
+/*************************************************    footer   ******************/
+footer {
+    min-height: 280px;
+    background: #000;
+    text-align: center;
+}
+
+.footer-nav-wrap {
+    padding: 2em 0;
+    overflow: hidden;
+}
+
+.footer-nav {
+    float: left;
+    width: 50%;
+    list-style-type: none;
+    text-align: right;
+}
+
+.footer-nav li {
+    padding: 0.5em 2em;
+}
+
+.footer-nav li:first-child {
+    padding-top: 0;
+}
+
+.footer-nav li:last-child {
+    padding-bottom: 0;
+}
+
+.footer-nav a {
+    color: #aaa;
+    font-size: 90%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacts-nav li {
+    border-left: 1px solid #4c4c4c;
+    text-align: left;
+}
+
+.contacts-nav li a img {
+    width: 25px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+

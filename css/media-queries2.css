@@ -1,0 +1,48 @@
+/****** device max-width 32em ******/
+@media screen and (max-width: 32em) {
+    .logo {
+        display: none;
+    }
+    .rs-logo {
+        margin:-3em 0 0 0;
+        width: 260px;
+        height: 220px;
+    }
+    .nav {
+        display: none;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .nav li.active a {
+        background: #222;
+    }
+
+    section {
+        padding: 1em .5em;
+    }
+
+    section p {
+        text-align: justify;
+    }
+
+    .banner {
+        padding-top: 0;
+    }
+
+    .banner h1 {
+        font-size: 250%;
+    }
+    .banner h2 {
+        font-size: 200%;
+    }
+    .banner p {
+        font-size: 150%;
+    }
+    .about-rs h3 {
+        font-size: 300%;
+    }
+}
+
